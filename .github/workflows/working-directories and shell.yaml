@@ -29,6 +29,7 @@ jobs:
                 Write-output "these are the files and the directories from windows"
     
     Python-Shell:
+        needs: display-working-directories-and-shell
         runs-on: ubuntu-latest
         steps:
             - name: running python shell
