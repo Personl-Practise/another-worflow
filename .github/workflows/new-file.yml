@@ -1,0 +1,23 @@
+name: workflow
+on: push
+
+jobs:
+   
+        runs-shell-commands:
+            runs-on: ubuntu-latest
+            steps:
+            - name: print result
+              run: echo "hello world"
+        runs-more-commands:
+            runs-on: ubuntu-latest
+            steps:
+            - name: print result
+              run: echo "hi there"
+        run-multiline-commands:
+            runs-on: ubuntu-latest
+            steps:
+            - name: check-packages   
+              run: |
+                    -   node-v
+                    -   npm -v
+        
