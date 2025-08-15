@@ -27,4 +27,17 @@ jobs:
               -
                 name: Set up Docker
                 uses: docker/setup-docker-action@v4
+        run-dependent-job:
+            runs-on: windows-latest
+            steps:
+              - name: print windows output
+                run: Write-Output "first windows commands"
+
+        run-paralell-job:
+            runs-on: macos-latest
+            steps:
+            - name: view sw version
+              run: sw_vers
+
+              
         
