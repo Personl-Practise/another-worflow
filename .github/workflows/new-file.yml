@@ -18,6 +18,6 @@ jobs:
             steps:
             - name: check-packages   
               run: |
-                    -   node-v
+                    -   node -v
                     -   npm -v
         
